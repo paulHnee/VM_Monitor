@@ -18,7 +18,7 @@ VM_Monitor/
 │   ├── Server.js                    # HTTPS-API-Server (Hauptanwendung)
 │   ├── package.json                 # NPM-Abhängigkeiten und Konfiguration
 │   └── certs/
-│       └── itsv2689_hnee_de.p7b    # SSL/TLS-Zertifikat
+│       └── SSL.p7b                  # SSL/TLS-Zertifikat
 ├── vm_status.json                   # VM-Statusdatendatei
 ├── vm_monitor.bat                   # Windows-Startskript
 ├── API_Server.bat                   # API-Server-Startskript
@@ -45,8 +45,8 @@ VM_Monitor/
    ```
 
 2. **SSL/TLS-Zertifikat konfigurieren:**
-   - Platzieren Sie Ihren privaten Schlüssel unter: `c:/xampp/apache/conf/ssl.key/itsv2689.key`
-   - Platzieren Sie Ihr Zertifikat unter: `c:/xampp/apache/conf/ssl.crt/certificate_itsv2689.crt`
+   - Platzieren Sie Ihren privaten Schlüssel
+   - Platzieren Sie Ihr Zertifikat
    - **Hinweis:** Die Pfade sind derzeit hardcodiert und sollten bei Bedarf angepasst werden
 
 3. **Server starten:**
@@ -230,7 +230,9 @@ Dieses Projekt ist unter der **ISC-Lizenz** lizenziert.
 
 | Version | Datum | Änderungen |
 |---------|-------|-----------|
-| 1.0.0 | Januar 2026 | Initiale Version mit HTTPS-API und JSON-Datenspeicherung |
+| 1.0.0 | August 2025 | Initiale Version mit HTTPS-API und JSON-Datenspeicherung |
+| 2.0.0 | Dezember 2025 | Update auf neue Pool Vms |
+
 
 ---
 
