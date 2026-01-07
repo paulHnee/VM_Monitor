@@ -1,28 +1,4 @@
-/**
- * ============================================================================
- * VM-Status Datendatei
- * ============================================================================
- * 
- * Diese Datei enthält die aktuellen Statusinformationen aller verwalteten
- * virtuellen Maschinen im VM-Monitor System.
- * 
- * Datenstruktur:
- * {
- *   "vms": [
- *     {
- *       "name": string      - Name der virtuellen Maschine (z.B. "PVM01")
- *       "online": boolean   - Status: true = online, false = offline
- *       "users": number     - Anzahl aktiver Benutzer auf der VM
- *     }
- *   ]
- * }
- * 
- * Diese Datei wird vom VM-Monitor API-Server gelesen und über die REST-API
- * verfügbar gemacht: GET /api/vm/vmstatus
- * 
- * Letzte Aktualisierung: Januar 2026
- * ============================================================================
- */
+
 
 {
   "vms": [
@@ -70,3 +46,4 @@
     }
   ]
 }
+
