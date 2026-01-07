@@ -1,0 +1,72 @@
+/**
+ * ============================================================================
+ * VM-Status Datendatei
+ * ============================================================================
+ * 
+ * Diese Datei enthält die aktuellen Statusinformationen aller verwalteten
+ * virtuellen Maschinen im VM-Monitor System.
+ * 
+ * Datenstruktur:
+ * {
+ *   "vms": [
+ *     {
+ *       "name": string      - Name der virtuellen Maschine (z.B. "PVM01")
+ *       "online": boolean   - Status: true = online, false = offline
+ *       "users": number     - Anzahl aktiver Benutzer auf der VM
+ *     }
+ *   ]
+ * }
+ * 
+ * Diese Datei wird vom VM-Monitor API-Server gelesen und über die REST-API
+ * verfügbar gemacht: GET /api/vm/vmstatus
+ * 
+ * Letzte Aktualisierung: Januar 2026
+ * ============================================================================
+ */
+
+{
+  "vms": [
+    {
+      "name": "PVM01",
+      "online": true,
+      "users": 1,
+      "beschreibung": "Produktionsmaschine 01"
+    },
+    {
+      "name": "PVM02",
+      "online": true,
+      "users": 1,
+      "beschreibung": "Produktionsmaschine 02"
+    },
+    {
+      "name": "PVM03",
+      "online": true,
+      "users": 0,
+      "beschreibung": "Produktionsmaschine 03"
+    },
+    {
+      "name": "PVM04",
+      "online": true,
+      "users": 0,
+      "beschreibung": "Produktionsmaschine 04"
+    },
+    {
+      "name": "PVM05",
+      "online": true,
+      "users": 0,
+      "beschreibung": "Produktionsmaschine 05"
+    },
+    {
+      "name": "PVM06",
+      "online": true,
+      "users": 0,
+      "beschreibung": "Produktionsmaschine 06"
+    },
+    {
+      "name": "PVM07",
+      "online": true,
+      "users": 0,
+      "beschreibung": "Produktionsmaschine 07"
+    }
+  ]
+}

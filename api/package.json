@@ -1,0 +1,22 @@
+{
+  "name": "vm_monitor",
+  "version": "1.0.0",
+  "description": "VM-Monitor API Server - Ein HTTPS-Server zur Verwaltung und Überwachung virtueller Maschinen",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Fehler: Keine Tests angegeben\" && exit 1",
+    "start": "node Server.js"
+  },
+  "keywords": [
+    "VM-Monitor",
+    "Virtuelle Maschinen",
+    "API",
+    "HTTPS",
+    "Server"
+  ],
+  "author": "Paul Buchwald",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
